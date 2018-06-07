@@ -48,9 +48,6 @@ ol {
   padding-left: 20px;
   margin-top: 35px; }
 
-.header, .main-container {
-  padding: 2.5vw 5vw; }
-
 /*----------------------------------
 ----------------Header--------------
 ------------------------------------*/
@@ -70,7 +67,8 @@ ol {
     width: 16vw;
     min-width: 200px; }
   .header .gp-logo {
-    width: 150px; }
+    width: 150px;
+    margin-bottom: 15px; }
   .header .intro-content {
     color: #ffffff;
     font-family: "Comfortaa-Light";
@@ -93,11 +91,8 @@ ol {
 ------------------------------------*/
 .footer .logo-container {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   padding: 2vw 3vw; }
-  .footer .logo-container .logo {
-    max-width: 200px; }
   .footer .logo-container .vertical-separator {
     border-left: 1px solid gray;
     height: 110px;
@@ -113,17 +108,29 @@ ol {
     .header .right-section {
       height: 300px; } }
 @media screen and (min-width: 768px) {
-  .header .gitei-phone {
-    margin-bottom: -200px; } }
+  .header {
+    padding: 2.5vw 5vw; }
+    .header .gitei-phone {
+      margin-bottom: -200px; }
+
+  .footer .logo-container {
+    justify-content: flex-start; }
+    .footer .logo-container .logo {
+      max-width: 200px; } }
 @media screen and (max-width: 767px) {
   .header .cpe-logo {
     max-width: 300px;
-    margin: auto auto 50px; }
+    margin: 45px auto; }
   .header .intro-content {
     margin-top: 10px;
     padding: 0px 12px 1px 12px; }
     .header .intro-content h1 {
       padding: 5px 0px;
-      margin-top: 5px; } }
+      margin-top: 5px; }
+
+  .footer .logo-container {
+    justify-content: center; }
+    .footer .logo-container .logo {
+      width: 250px; } }
 
 /*# sourceMappingURL=style.css.map */

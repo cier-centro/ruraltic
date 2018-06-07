@@ -14,26 +14,45 @@
     }
 }
 @media screen and (min-width: 768px) {
-  .header {
-  		.gitei-phone {
-  				margin-bottom: -200px;
-      }
-  }
+    .header {
+        padding: 2.5vw 5vw;
+    		.gitei-phone {
+    				margin-bottom: -200px;
+        }
+    }
+    .footer {
+        .logo-container {
+            justify-content: flex-start;
+
+            .logo {
+                max-width: 200px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 767px) {
-	.header {
-		.cpe-logo {
-  			max-width: 300px;
-  			margin: auto auto 50px;
-		}
-		.intro-content{
-        margin-top:10px;
-        padding:0px 12px 1px 12px;
+  	.header {
+    		.cpe-logo {
+      			max-width: 300px;
+      			margin: 45px auto;
+    		}
+    		.intro-content{
+            margin-top:10px;
+            padding:0px 12px 1px 12px;
 
-  			h1{
-    				padding:5px 0px;
-    				margin-top:5px;
-  			}
-		}
-	}
+      			h1{
+        				padding:5px 0px;
+        				margin-top:5px;
+      			}
+    		}
+  	}
+    .footer {
+        .logo-container {
+            justify-content: center;
+
+            .logo {
+                width: 250px;
+            }
+        }
+    }
 }
