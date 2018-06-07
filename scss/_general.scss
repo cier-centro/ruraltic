@@ -1,0 +1,18 @@
+/*----------------------------------
+----------------General--------------
+------------------------------------*/
+h1 {
+    color: $header-title;
+    font-size: 45px;
+  	font-family: "Comfortaa-Bold";
+}
+p {
+    font-size: 13px;
+}
+ol {
+    padding-left: 20px;
+    margin-top: 35px;
+}
+.header, .main-container {
+    padding: 2.5vw 5vw;
+}

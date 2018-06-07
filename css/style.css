@@ -1,0 +1,129 @@
+/*----------------------------------
+---------------Variables------------
+------------------------------------*/
+/**
+ * Mixins
+ * --------------------------------------------------
+ */
+/*
+@mixin background-gradient-angle-properties($color1, $color2, $angle) {
+	background: rgba($color1,1);
+	background: -moz-linear-gradient($angle, rgba($color1,1) 0%, rgba($color2,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba($color1,1)), color-stop(100%, rgba($color2,1)));
+	background: -webkit-linear-gradient($angle, rgba($color1,1) 0%, rgba($color2,1) 100%);
+	background: -o-linear-gradient($angle, rgba($color1,1) 0%, rgba($color2,1) 100%);
+	background: -ms-linear-gradient($angle, rgba($color1,1) 0%, rgba($color2,1) 100%);
+	background: linear-gradient($angle, rgba($color1,1) 0%, rgba($color2,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=1 );
+}
+*/
+/* vietnamese */
+@font-face {
+  font-family: 'Comfortaa-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Comfortaa/Comfortaa-Regular.ttf); }
+@font-face {
+  font-family: 'Comfortaa-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Comfortaa/Comfortaa-Bold.ttf); }
+@font-face {
+  font-family: 'Comfortaa-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Comfortaa/Comfortaa-Light.ttf); }
+/*----------------------------------
+----------------General--------------
+------------------------------------*/
+h1 {
+  color: #ffffff;
+  font-size: 45px;
+  font-family: "Comfortaa-Bold"; }
+
+p {
+  font-size: 13px; }
+
+ol {
+  padding-left: 20px;
+  margin-top: 35px; }
+
+.header, .main-container {
+  padding: 2.5vw 5vw; }
+
+/*----------------------------------
+----------------Header--------------
+------------------------------------*/
+.header {
+  background: #dc3f5c;
+  background: -moz-linear-gradient(-45deg, #dc3f5c 0%, #f17f64 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #dc3f5c), color-stop(100%, #f17f64));
+  background: -webkit-linear-gradient(-45deg, #dc3f5c 0%, #f17f64 100%);
+  background: -o-linear-gradient(-45deg, #dc3f5c 0%, #f17f64 100%);
+  background: -ms-linear-gradient(-45deg, #dc3f5c 0%, #f17f64 100%);
+  background: linear-gradient(135deg, #dc3f5c 0%, #f17f64 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc3f5c', endColorstr='#f17f64', GradientType=1 ); }
+  .header .cpe-logo {
+    margin: 10px 0 50px; }
+  .header .gitei-phone {
+    float: right;
+    width: 16vw;
+    min-width: 200px; }
+  .header .gp-logo {
+    width: 150px; }
+  .header .intro-content {
+    color: #ffffff;
+    font-family: "Comfortaa-Light";
+    font-size: 18px;
+    line-height: 170%; }
+  .header h1 {
+    margin: 14px 0px 9px;
+    padding-bottom: 9px; }
+    .header h1 span {
+      font-size: 18px;
+      display: block;
+      font-family: "Comfortaa-Light"; }
+  .header .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+/*----------------------------------
+----------------Footer--------------
+------------------------------------*/
+.footer .logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2vw 3vw; }
+  .footer .logo-container .logo {
+    max-width: 200px; }
+  .footer .logo-container .vertical-separator {
+    border-left: 1px solid gray;
+    height: 110px;
+    margin: 0 1.5vw; }
+
+/*----------------------------------
+--------------Media Query-----------
+------------------------------------*/
+@media screen and (min-width: 992px) {
+  .header {
+    display: flex;
+    align-items: stretch; }
+    .header .right-section {
+      height: 300px; } }
+@media screen and (min-width: 768px) {
+  .header .gitei-phone {
+    margin-bottom: -200px; } }
+@media screen and (max-width: 767px) {
+  .header .cpe-logo {
+    max-width: 300px;
+    margin: auto auto 50px; }
+  .header .intro-content {
+    margin-top: 10px;
+    padding: 0px 12px 1px 12px; }
+    .header .intro-content h1 {
+      padding: 5px 0px;
+      margin-top: 5px; } }
+
+/*# sourceMappingURL=style.css.map */

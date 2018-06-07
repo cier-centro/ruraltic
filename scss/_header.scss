@@ -1,0 +1,40 @@
+/*----------------------------------
+----------------Header--------------
+------------------------------------*/
+
+.header {
+		@include background-gradient-properties-45deg(#dc3f5c, #f17f64);
+
+    .cpe-logo {
+				margin: 10px 0 50px;
+    }
+		.gitei-phone {
+				float: right;
+				width: 16vw;
+				min-width: 200px;
+		}
+		.gp-logo {
+				width: 150px;
+		}
+		.intro-content{
+				color:#ffffff;
+				font-family: "Comfortaa-Light";
+				font-size: 18px;
+				line-height: 170%;
+		}
+	    h1 {
+					margin: 14px 0px 9px;
+					padding-bottom: 9px;
+
+							span {
+									font-size: 18px;
+									display: block;
+									font-family: "Comfortaa-Light";
+			        }
+	    }
+	    .right-section {
+					display: flex;
+	        align-items: center;
+	        justify-content: center;
+	    }
+}
