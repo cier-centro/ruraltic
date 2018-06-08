@@ -6,12 +6,16 @@
     .logo-container {
         display: flex;
         align-items: center;
-        padding: 2vw 3vw;
-        
+        padding: 2vw 3vw 1vw;
+
         .vertical-separator {
             border-left: 1px solid gray;
             height: 110px;
             margin: 0 1.5vw;
         }
+    }
+    .extra-logos {
+        text-align: center;
+        padding: 1vw 3vw 2vw;        
     }
 }

@@ -50,7 +50,15 @@ ol {
 
 .btn {
   margin: 40px 0;
-  color: black; }
+  position: relative; }
+  .btn:before {
+    content: "";
+    position: absolute;
+    background: url("../img/img_arrow.png");
+    width: 100px;
+    height: 62px;
+    top: -25px;
+    right: -115px; }
 
 /*----------------------------------
 ----------------Header--------------
@@ -83,9 +91,11 @@ ol {
   .header .gp-logo {
     width: 150px;
     margin-bottom: 15px; }
+  .header .img-userdata {
+    width: 260px; }
   .header .intro-content {
     color: #ffffff;
-    font-family: "Comfortaa-Light";
+    font-family: "Helvetica";
     font-size: 18px;
     line-height: 170%; }
   .header h1 {
@@ -107,11 +117,14 @@ ol {
 .footer .logo-container {
   display: flex;
   align-items: center;
-  padding: 2vw 3vw; }
+  padding: 2vw 3vw 1vw; }
   .footer .logo-container .vertical-separator {
     border-left: 1px solid gray;
     height: 110px;
     margin: 0 1.5vw; }
+.footer .extra-logos {
+  text-align: center;
+  padding: 1vw 3vw 2vw; }
 
 /*----------------------------------
 --------------Media Query-----------
@@ -134,7 +147,14 @@ ol {
   .footer .logo-container {
     justify-content: flex-start; }
     .footer .logo-container .logo {
-      max-width: 200px; } }
+      max-width: 200px; }
+  .footer .extra-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .footer .extra-logos img {
+      height: 7vw;
+      max-height: 65px; } }
 @media screen and (max-width: 767px) {
   .header:before {
     border-width: 80vh 0 0 60vw; }
@@ -151,6 +171,9 @@ ol {
   .footer .logo-container {
     justify-content: center; }
     .footer .logo-container .logo {
-      width: 250px; } }
+      width: 250px; }
+  .footer .extra-logos img {
+    height: 12vw;
+    margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -15,5 +15,15 @@ ol {
 }
 .btn {
     margin: 40px 0;
-    color: black;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        background: url("../img/img_arrow.png");
+        width: 100px;
+        height: 62px;
+        top: -25px;
+        right: -115px;
+    }
 }
