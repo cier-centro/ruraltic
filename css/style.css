@@ -85,8 +85,8 @@ ol {
   .header .cpe-logo {
     margin: 10px 0 50px; }
   .header .gitei-phone {
-    width: 17vw;
-    min-width: 200px;
+    width: 22vw;
+    min-width: 280px;
     margin: auto; }
   .header .gp-logo {
     width: 150px;
@@ -100,7 +100,8 @@ ol {
     line-height: 170%; }
   .header h1 {
     margin: 14px 0px 9px;
-    padding-bottom: 9px; }
+    padding-bottom: 9px;
+    line-height: 80%; }
     .header h1 span {
       font-size: 18px;
       display: block;
