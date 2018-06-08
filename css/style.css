@@ -56,18 +56,28 @@ ol {
 ----------------Header--------------
 ------------------------------------*/
 .header {
-  background: #dc3f5c;
-  background: -moz-linear-gradient(-45deg, #dc3f5c 0%, #f17f64 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, #dc3f5c), color-stop(100%, #f17f64));
-  background: -webkit-linear-gradient(-45deg, #dc3f5c 0%, #f17f64 100%);
-  background: -o-linear-gradient(-45deg, #dc3f5c 0%, #f17f64 100%);
-  background: -ms-linear-gradient(-45deg, #dc3f5c 0%, #f17f64 100%);
-  background: linear-gradient(135deg, #dc3f5c 0%, #f17f64 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc3f5c', endColorstr='#f17f64', GradientType=1 ); }
+  position: relative;
+  background: #134070;
+  background: -moz-linear-gradient(-45deg, #134070 0%, #064f7d 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #134070), color-stop(100%, #064f7d));
+  background: -webkit-linear-gradient(-45deg, #134070 0%, #064f7d 100%);
+  background: -o-linear-gradient(-45deg, #134070 0%, #064f7d 100%);
+  background: -ms-linear-gradient(-45deg, #134070 0%, #064f7d 100%);
+  background: linear-gradient(135deg, #134070 0%, #064f7d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#134070', endColorstr='#064f7d', GradientType=1 ); }
+  .header:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffff09;
+    bottom: 0;
+    left: 0; }
   .header .cpe-logo {
     margin: 10px 0 50px; }
   .header .gitei-phone {
-    width: 16vw;
+    width: 17vw;
     min-width: 200px;
     margin: auto; }
   .header .gp-logo {
@@ -115,6 +125,8 @@ ol {
 @media screen and (min-width: 768px) {
   .header {
     padding: 2.5vw 5vw; }
+    .header:before {
+      border-width: 75vh 0 0 40vw; }
     .header .gitei-phone {
       margin-bottom: -200px;
       float: right; }
@@ -124,6 +136,8 @@ ol {
     .footer .logo-container .logo {
       max-width: 200px; } }
 @media screen and (max-width: 767px) {
+  .header:before {
+    border-width: 80vh 0 0 60vw; }
   .header .cpe-logo {
     max-width: 300px;
     margin: 45px auto; }

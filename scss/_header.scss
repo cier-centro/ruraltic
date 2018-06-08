@@ -3,13 +3,25 @@
 ------------------------------------*/
 
 .header {
-		@include background-gradient-properties-45deg(#dc3f5c, #f17f64);
+		position: relative;
+		@include background-gradient-properties-45deg(#134070, #064f7d);
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-color: transparent transparent transparent #ffffff09;
+			bottom: 0;
+			left: 0;
+		}
 
     .cpe-logo {
 				margin: 10px 0 50px;
     }
 		.gitei-phone {
-				width: 16vw;
+				width: 17vw;
 				min-width: 200px;
 				margin: auto;
 		}
