@@ -85,7 +85,7 @@ ol {
   .header .cpe-logo {
     margin: 0 0 50px; }
   .header .gitei-phone {
-    width: 22vw;
+    width: 430px;
     min-width: 280px;
     margin: auto; }
   .header .gp-logo {
@@ -93,6 +93,11 @@ ol {
     margin-bottom: 15px; }
   .header .img-userdata {
     width: 260px; }
+  .header .step-container {
+    border: 1px solid #36b4e3;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0; }
   .header .intro-content {
     color: #ffffff;
     font-family: "Helvetica";
@@ -144,6 +149,14 @@ ol {
     .header .gitei-phone {
       margin-bottom: -200px;
       float: right; }
+    .header .step-container {
+      display: flex;
+      justify-content: flex-start;
+      overflow-x: auto; }
+    .header .img-step {
+      width: 260px;
+      height: 132px;
+      margin-right: 15px; }
 
   .footer .logo-container {
     justify-content: flex-start; }
@@ -162,6 +175,10 @@ ol {
   .header .cpe-logo {
     max-width: 300px;
     margin: 45px auto; }
+  .header .img-step {
+    margin: 3vw auto;
+    max-width: 350px;
+    width: 60vw; }
   .header .intro-content {
     margin-top: 10px;
     padding: 0px 12px 1px 12px; }
